@@ -31,3 +31,11 @@ To deploy, run the following command:
 ```zsh
 $ npm run deploy
 ```
+
+## Build & Deploy
+
+To build the project and subsequently deploy, run:
+
+```zsh
+$ npm run build-deploy
+```

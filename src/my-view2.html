@@ -16,22 +16,228 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <style include="shared-styles">
       :host {
         display: block;
-
-        padding: 10px;
+        font-size: 15px;
+      }
+      
+      :host * {
+        box-sizing: border-box;
+      }
+      
+      .controls {
+        padding: .5em 1em;
+        background-color: #fff;
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.4);
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        text-align: right;
+      }
+      
+      .controls__button {
+        font-size: 1.6em;
+        padding: 0 10px;
+        border: none;
+        background: #fff;
+        font-family: 'Crimson Text', serif;
+        -webkit-transition-duration: .2s;
+        transition-duration: .2s;
+      }
+      
+      .controls__button:hover {
+        color: #B8893D;
+      }
+      
+      .controls__button__superscript {
+        vertical-align: super;
+        font-size: .7em;
+        margin-left: -5px;
+      }
+      
+      #contentDiv {
+        max-width: 680px;
+        width: 94%;
+        margin: 0 auto;
+        font-family: 'Crimson Text', serif;
+      }
+      
+      article {
+        /*padding: 1em;*/
+        margin: 1em 0;
+        background-color: #fff;
+      }
+      
+      article header {
+        padding: 1em;
+      }
+      
+      article header h2 {
+        font-size: 2.2em;
+        text-transform: capitalize;
+        font-family: 'Raleway';
+        margin-top: .5em;
+        margin-bottom: 0;
+      }
+      
+      article section {
+        padding: 1em;
+        font-size: 1.2em;
+        line-height: 1.4em;
+      }
+      
+      article section p {
+        margin-bottom: 1em;
+      }
+      
+      article footer {
+        padding: 1em;
+        color: #999;
+        text-align: right;
       }
     </style>
 
-    <div class="card">
-      <div class="circle">2</div>
-      <h1>View Two</h1>
-      <p>Ea duis bonorum nec, falli paulo aliquid ei eum.</p>
-      <p>Id nam odio natum malorum, tibique copiosae expetenda mel ea.Detracto suavitate repudiandae no eum. Id adhuc minim soluta nam.Id nam odio natum malorum, tibique copiosae expetenda mel ea.</p>
+    <div id="controls" class="controls">
+      <button id="fontSizeDecrease" class="controls__button">
+        A <span class="controls__button__superscript">-</span>
+      </button>
+
+      <button id="fontSizeIncrease" class="controls__button">
+        A <span class="controls__button__superscript">+</span>
+      </button>
+
+      <button id="fontSizeReset" class="controls__button">
+        A <span class="controls__button__superscript">=</span>
+      </button>
+    </div>
+
+    <div id="contentDiv" class="content">
+
+      <article>
+        <header>
+          <h2>
+            Some article
+          </h2>
+        </header>
+
+        <section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at quam nec ex sagittis luctus. Maecenas velit
+            sapien, vehicula ac cursus ut, maximus a velit. In nulla quam, molestie quis mollis sit amet, sodales id mauris.
+            Vivamus vitae libero vitae
+          </p>
+          <p>
+            libero elementum aliquet nec eget ipsum. Aenean sit amet erat in odio tempus semper quis et quam. Donec tincidunt eget sem
+            sed hendrerit. Quisque vehicula, sapien in vehicula maximus, ipsum tortor ultricies ipsum, nec porta quam nunc
+            tincidunt eros.
+          </p>
+          <p>
+            Aenean ultrices euismod mollis. Aenean eget metus elit. Etiam dictum malesuada risus non sagittis. Nullam porta sem eu arcu
+            pretium, quis luctus risus fermentum. Maecenas mattis dolor ac lorem porttitor, a varius libero accumsan. Ut
+            ut mi et felis
+          </p>
+          <p>
+            pellentesque tincidunt. Vivamus dui odio, rutrum non ipsum at, suscipit dapibus quam. Vestibulum in maximus dui. Praesent
+            vel lectus dictum ante tempor blandit a ac ex. Morbi fringilla felis vitae nisl congue, nec varius sem porta.
+            Pellentesque
+          </p>
+          <p>
+            pulvinar cursus nibh, gravida dignissim eros semper non. Quisque enim diam, imperdiet at risus id, eleifend fermentum risus.
+            Vivamus tristique, ante eget iaculis commodo, eros nisi consectetur risus, vel placerat ex metus ac tellus. Vivamus
+            sed
+          </p>
+          <p>
+            dignissim nisi. Quisque placerat est vel ullamcorper rutrum. Proin efficitur semper nunc vitae tempor. Donec rutrum laoreet
+            rutrum. Donec eget libero et eros ornare imperdiet. Curabitur tincidunt imperdiet arcu, ac accumsan nunc interdum
+            a. Quisque id interdum justo, aliquam blandit ex. Mauris facilisis lorem nisl, a tincidunt libero scelerisque
+            non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque finibus
+            consectetur dolor, vel sagittis nibh
+          </p>
+          <p>
+            rhoncus vel. Suspendisse posuere, odio non tempor scelerisque, leo dui lobortis nulla, id gravida justo ante at ligula. Proin
+            maximus sapien sed odio tempus accumsan. Donec posuere nisi neque. Morbi vitae sapien ultrices, viverra nunc
+            a, fringilla neque. Donec velit felis, placerat et sollicitudin et, mollis eu urna. Donec accumsan est ligula,
+            vitae scelerisque ex fringilla mollis. Proin non viverra lorem. Aenean id purus risus. Pellentesque faucibus
+            lectus sit amet mauris ultricies, non sollicitudin lacus ullamcorper. Proin suscipit ultrices justo, quis laoreet
+            turpis. Mauris metus odio, cursus eget neque eget, ultricies pulvinar tellus. Etiam orci nunc, pulvinar sit amet
+            mi vel, elementum suscipit mi. Suspendisse ut eros ac orci
+          </p>
+          <p>
+            laoreet sodales. Morbi porttitor libero vel enim sagittis, id tincidunt metus tempus. Praesent tempor mattis dui, ut iaculis
+            ex semper et. Pellentesque dapibus nisl at dolor sollicitudin aliquam. Phasellus urna orci, lacinia ut risus
+            quis, fermentum placerat lacus. Suspendisse auctor, sapien venenatis auctor fermentum, ex tortor suscipit urna,
+            in accumsan ipsum nulla sit amet lorem. Proin fermentum ipsum eget tristique ornare. Sed at rutrum tortor, ac
+            posuere dolor. Curabitur semper finibus gravida. Morbi scelerisque turpis justo, sed congue odio facilisis sit
+            amet. Praesent mollis gravida metus quis sollicitudin. Phasellus dictum vehicula varius.
+          </p>
+        </section>
+
+        <footer>
+          Adam Murray // 22/03/2017
+        </footer>
+      </article>
+
+      <article>
+        <header>
+          <h2>
+            Some other article
+          </h2>
+        </header>
+
+        <section>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at quam nec ex sagittis luctus. Maecenas velit
+            sapien, vehicula ac cursus ut, maximus a velit. In nulla quam, molestie quis mollis sit amet, sodales id mauris.
+            Vivamus vitae libero vitae
+          </p>
+          <p>
+            libero elementum aliquet nec eget ipsum. Aenean sit amet erat in odio tempus semper quis et quam. Donec tincidunt eget sem
+            sed hendrerit. Quisque vehicula, sapien in vehicula maximus, ipsum tortor ultricies ipsum, nec porta quam nunc
+            tincidunt eros.
+          </p>
+          <p>
+            Aenean ultrices euismod mollis. Aenean eget metus elit. Etiam dictum malesuada risus non sagittis. Nullam porta sem eu arcu
+            pretium, quis luctus risus fermentum. Maecenas mattis dolor ac lorem porttitor, a varius libero accumsan. Ut
+            ut mi et felis
+          </p>
+          <p>
+            pellentesque tincidunt. Vivamus dui odio, rutrum non ipsum at, suscipit dapibus quam. Vestibulum in maximus dui. Praesent
+            vel lectus dictum ante tempor blandit a ac ex. Morbi fringilla felis vitae nisl congue, nec varius sem porta.
+            Pellentesque
+          </p>
+          <p>
+            pulvinar cursus nibh, gravida dignissim eros semper non. Quisque enim diam, imperdiet at risus id, eleifend fermentum risus.
+            Vivamus tristique, ante eget iaculis commodo, eros nisi consectetur risus, vel placerat ex metus ac tellus. Vivamus
+            sed
+          </p>
+          <p>
+            dignissim nisi. Quisque placerat est vel ullamcorper rutrum. Proin efficitur semper nunc vitae tempor. Donec rutrum laoreet
+            rutrum. Donec eget libero et eros ornare imperdiet. Curabitur tincidunt imperdiet arcu, ac accumsan nunc interdum
+            a. Quisque id interdum justo, aliquam blandit ex. Mauris facilisis lorem nisl, a tincidunt libero scelerisque
+            non. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque finibus
+            consectetur dolor, vel sagittis nibh
+          </p>
+          <p>
+            rhoncus vel. Suspendisse posuere, odio non tempor scelerisque, leo dui lobortis nulla, id gravida justo ante at ligula. Proin
+            maximus sapien sed odio tempus accumsan. Donec posuere nisi neque. Morbi vitae sapien ultrices, viverra nunc
+            a, fringilla neque. Donec velit felis, placerat et sollicitudin et, mollis eu urna. Donec accumsan est ligula,
+            vitae scelerisque ex fringilla mollis. Proin non viverra lorem. Aenean id purus risus. Pellentesque faucibus
+            lectus sit amet mauris ultricies, non sollicitudin lacus ullamcorper. Proin suscipit ultrices justo, quis laoreet
+            turpis. Mauris metus odio, cursus eget neque eget, ultricies pulvinar tellus. Etiam orci nunc, pulvinar sit amet
+            mi vel, elementum suscipit mi. Suspendisse ut eros ac orci
+          </p>
+          <p>
+            laoreet sodales. Morbi porttitor libero vel enim sagittis, id tincidunt metus tempus. Praesent tempor mattis dui, ut iaculis
+            ex semper et. Pellentesque dapibus nisl at dolor sollicitudin aliquam. Phasellus urna orci, lacinia ut risus
+            quis, fermentum placerat lacus. Suspendisse auctor, sapien venenatis auctor fermentum, ex tortor suscipit urna,
+            in accumsan ipsum nulla sit amet lorem. Proin fermentum ipsum eget tristique ornare. Sed at rutrum tortor, ac
+            posuere dolor. Curabitur semper finibus gravida. Morbi scelerisque turpis justo, sed congue odio facilisis sit
+            amet. Praesent mollis gravida metus quis sollicitudin. Phasellus dictum vehicula varius.
+          </p>
+        </section>
+
+        <footer>
+          Big Jim // 22/03/2017
+        </footer>
+      </article>
     </div>
   </template>
 
-  <script>
-    Polymer({
-      is: 'my-view2',
-    });
-  </script>
+  <script src="my-view2.js"></script>
 </dom-module>
