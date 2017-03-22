@@ -1,0 +1,115 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+       :host {
+        display: block;
+        /*padding: 10px;*/
+      }
+      
+      .main-image {
+        width: 100%;
+        height: 380px;
+        background-image: url(/images/maasai_cattle_bw.jpg);
+        background-size: 139%;
+        background-position: 50% 0;
+        text-align: center;
+        position: relative;
+      }
+      
+      .main-image__text {
+        position: absolute;
+        width: 70;
+        text-align: left;
+        padding: 20px;
+        box-sizing: border-box;
+        background: linear-gradient(45deg, #00BFA5, #1DE9B6);
+        border-left: 4px solid black;
+        border-bottom: 4px solid black;
+        right: 0;
+        left: 80px;
+      }
+      
+      .main-image__text h1 {
+        font-size: 38px;
+        margin-bottom: 5px;
+      }
+
+      .main-image__text h2 {
+        font-size: 18px;
+        margin: 0;
+        font-style: italic;
+        color: #004D40;
+      }
+    </style>
+
+    <div class="main-image">
+      <div class="main-image__text">
+        <h1>
+          AlfaVet Animal Healthcare
+        </h1>
+        <h2>
+          Animal healthcare at its best
+        </h2>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1>
+        Welcome
+      </h1>
+      <p>
+        AlfaVet Animal Healthcare is recognized for its commitment to the productions of high quality veterinary products both locally
+        and internationally. With the changing times, the company has invested in technology and makes consistent research
+        and development of its products for the promotion of better animal health.
+      </p>
+      <p>
+
+        Alfavet Animal Healthcare has grown over the years with stability fueling confidence from the available market. The company
+        conforms to the laid down International standards for both manufacturing and services. Solid management practices
+        together with enthusiastic commitment, forms the foundation for its continued advancement on the domestic and international
+        markets.
+      </p>
+      <p>
+        <h2>
+          Flexibility In Delivery Of Feed Additives
+        </h2>
+        Our customers are fully aware of the importance of reducing prices and transport costs by globalizing orders. As a leader
+        in this field, Alfavet has oriented all its talents towards the flexibility to contribute to competitive pricing,
+        reliability and customer service.
+      </p>
+      <p>
+        <h2>
+          Total Quality Control
+        </h2>
+        To meet the basic core requirements of your business, Alfavet must deliver the quality demanded by its customers. In this
+        regard, we purchase raw materials known and tested by our quality control team staffed with highly skilled analysts.
+      </p>
+      <p>
+        <h2>
+          Technical Services
+        </h2>
+        Alfavet has a well equipped technical service and development laboratory staffed by highly qualified chemists and technicians
+        who are able to advice you on health and safety regulations applicable to the handling of our products.
+      </p>
+    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'my-view1',
+    });
+  </script>
+</dom-module>
